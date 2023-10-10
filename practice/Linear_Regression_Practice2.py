@@ -17,7 +17,7 @@ for epoch in range(3001):
     #가설
     h = x_train @ W + b
     #코스트
-    cost = ((h-y_train)**2).mean()
+    cost = ((h-y_train)**2).mean() #MSE
 
     cost.backward()
 
